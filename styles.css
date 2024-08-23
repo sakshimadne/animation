@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #0a1f44;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: white;
+}
+
+.logo {
+    font-size: 24px;
+    color: #ff6600;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.cta {
+    background-color: #ff6600;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.hero {
+    position: relative;
+    padding: 60px 40px;
+    background-color: #0a1f44;
+    text-align: center;
+    overflow: hidden;
+}
+
+.hero-text {
+    max-width: 800px;
+    margin: 0 auto;
+    animation: fadeIn ease-in 1s;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    animation: fadeInUp ease-in-out 1s;
+}
+
+.hero-text .cta {
+    margin-top: 20px;
+    animation: fadeIn ease-in 2s;
+}
+
+.hero-images {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.hero-images img {
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.5s ease-in-out;
+}
+
+.hero-images img:hover {
+    transform: scale(1.05);
+}
+
+.img1 {
+    animation: slideInLeft ease-in 1.5s;
+}
+
+.img2 {
+    animation: slideInRight ease-in-out 2s;
+}
+
+.img3 {
+    animation: slideInLeft ease-in 2.5s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
